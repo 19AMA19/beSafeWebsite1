@@ -1,0 +1,93 @@
+* {
+    font-family: 'Sunflower', sans-serif;
+}
+
+#navbar {
+    background-color: #232d4e;
+    background-image: url(/img/bgl.png);
+
+}
+
+#home {
+    background-color: #3c446c;
+    background-image: url(/img/bgl.png);
+}
+
+#applicationFeatures {
+    background-image: url(/img/bgl.png);
+}
+
+#topDrivers {
+    background-color: #232d4e;
+    background-image: url(/img/bgl.png);
+}
+
+#topDepartments {
+    background-image: url(/img/bgl.png);
+
+}
+
+#monthlyStatisticsReport {
+    background-color: #232d4e;
+    background-image: url(/img/bgl.png);
+}
+
+#monthlyQuizesCompetition {
+    color: #232d4e;
+    ;
+    background-image: url(/img/bgl.png);
+}
+
+#contactUs{
+    background-color: #232d4e;
+    background-image: url(/img/bgl.png);
+}
+
+#footer{
+    background-color: #232d4e;
+    background-image: url(/img/bgl.png); 
+}
+
+#faq{
+    background-image: url(/img/bgl.png); 
+}
+
+
+
+#proImage {
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+#tj{
+    text-align: justify;
+}
+
+#titl{
+ font-weight:500;
+}
+
+.cir {
+    color: #232d4e;
+    font-size: 12pt;
+    background: #ffb703;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 5px solid white;
+    display: inline-flex;
+
+}
+
+/* ------------------------ Dashboard Design ------------------------ */
+
+#emp{
+    border-bottom-left-radius: 50px;
+    /* border-top-left-radius: 50px; */
+    border-top-right-radius: 50px;
+}

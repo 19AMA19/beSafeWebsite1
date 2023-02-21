@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style> body::before{ content: ''; display: block; height: 60px } </style>
+
+    <title>Be Safe</title>
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <section >
+        <div id="navbar" class="navbar navbar-expand-md navbar-dark text-white fixed-top" style="height: 55px;">
+            <div class="container">
+
+             <nav class="navbar">
+                <div class="container-fluid align-items-center">
+                  <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" alt="Logo" height="35" class="d-inline-block align-text-center mx-2">
+                    Be Safe
+                  </a>
+               </div>
+              </nav>
+    
+                <div id="mainmenu" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <a onclick="logout(event)" class="btn btn-warning mx-3">Logout</a>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+     </section>
+
+
+<section class="container col-lg-7 mt-3" style="width: 100%;">
+<div id="emp" class=" d-flex bg-dark text-center align-items-center justify-content-center p-4"style="width: 100%;"> 
+    <div class="text-center">
+        <img class="p-3" src="/img/logo.png" style="width: 120px;">
+        <h6 class="text-light">Total Drivers</h6>
+        <p class="text-light"> 1000 </p>
+    </div>
+    <div class="text-center">
+        <img class="p-3" src="/img/logo.png" style="width: 120px;">
+        <h6 class="text-light">WRISOD</h6>
+        <p class="text-light"> 20 </p>
+    </div>
+    <div class="text-center">
+        <img class="p-3" src="/img/logo.png" style="width: 120px;">
+        <h6 class="text-light">SAISOD</h6>
+        <p class="text-light"> 322 </p>
+    </div>
+    <div class="text-center">
+        <img class="p-3" src="/img/logo.png" style="width: 120px;">
+        <h6 class="text-light">NAISOD</h6>
+        <p class="text-light"> 140 </p>
+    </div>
+    <div class="text-center">
+        <img class="p-3" src="/img/logo.png" style="width: 120px;">
+        <h6 class="text-light">DHISOD</h6>
+        <p class="text-light"> 524 </p>
+    </div>
+    <div class="text-center">
+        <img class="p-3" src="/img/logo.png" style="width: 120px;">
+        <h6 class="text-light">ISSD</h6>
+        <p class="text-light"> 5 </p>
+    </div>
+</div>
+</section>
+
+<section id="emp"  class="container bg-dark col-lg-10 col-md-10 col-xs-10 mt-3  d-flex justify-content-center align-items-center  p-4">
+   
+   <div class="col-lg-12 col-md-12 col-xs-12">
+    <h6 class="text-light text-center">Participation Rate</h6>
+    
+    <div class="d-flex col-lg-12">
+        <span class="text-light text-center justify-content-between align-items-center col-lg-3">WRISOD</span>
+        <div class="progress col-lg-7">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Example with label" style="width: 89%;" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">89%</div>
+        </div>
+    </div>
+    <br>
+    <div class="d-flex col-lg-12">
+        <span class="text-light text-center justify-content-between col-lg-3">SAISOD</span>
+        <div class="progress col-lg-7">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Example with label" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+        </div>
+    </div>
+    <br>
+    <div class="d-flex col-lg-12">
+        <span class="text-light text-center justify-content-between align-items-center col-lg-3">NAISOD</span>
+        <div class="progress col-lg-7">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Example with label" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+        </div>
+    </div>
+    <br>
+    <div class="d-flex col-lg-12">
+        <span class="text-light text-center justify-content-between col-lg-3">DHISOD</span>
+        <div class="progress col-lg-7">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Example with label" style="width: 44%;" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100">44%</div>
+        </div>
+    </div>
+    <br>
+    <div class="d-flex col-lg-12">
+        <span class="text-light text-center justify-content-between col-lg-3">ISSD</span>
+        <div class="progress col-lg-7">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Example with label" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+        </div>
+    </div>
+
+   </div>
+
+ 
+</section>
+
+
+<!-- Footer -->
+<footer id="footer" class="pt-2 text-white text-center mt-auto" style="height: 50px;">
+    <div class="container">
+      <p class="lead">
+           Copyright &copy; <span class="text-warning">WRISOD 2023</span>
+       </p>
+    </div>
+</footer>
+    
+<script src="./js/app.js" type="module"> </script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

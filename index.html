@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style> body::before{ content: ''; display: block; height: 60px } </style>
+
+    <title>Be Safe</title>
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+ <section >
+    <div id="navbar" class="navbar navbar-expand-md navbar-dark text-white fixed-top" style="height: 55px;">
+        <div class="container">
+        
+         <nav class="navbar">
+            <div class="container-fluid align-items-center">
+              <a class="navbar-brand" href="#">
+                <img src="/img/logo.png" alt="Logo" height="35" class="d-inline-block align-text-center mx-2">
+                Be Safe
+              </a>
+           </div>
+          </nav>
+
+            <div id="mainmenu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#applicationFeatures" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#topDrivers" class="nav-link">Top Drivers</a></li>
+                    <!-- <li class="nav-item"><a href="#monthlyStatisticsReport" class="nav-link">Monthly Report</a></li> -->
+                    <!-- <li class="nav-item"><a href="#monthlyQuizesCompetition" class="nav-link">Monthly Quizes</a></li> -->
+                    <!-- <li class="nav-item"><a href="#contactUs" class="nav-link">Contact Us</a></li> -->
+                    <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                    <a class="btn btn-warning mx-3" href="login.html" >Login</a>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+ </section>
+
+<!-- Hero -->
+<section id="home" style="height: 100%;" class=" text-light text-center text-sm-start">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-center px-5 py-4 align-items-center">
+            <div class="col-md-6 col-lg-12">
+                <div class="col-md-6 col-lg-11">
+                    <h3 id="titl" class=" display-4">Be Safe <span class="text-warning">Driving Application</span></h3>
+                    <p id="tj" class="py-4 lead text-justify">It’s a part of proposed WRISOD Employee Driving Behavior Program to enhance safety culture. Be Safe is a mobile application that can track and collect location data, driving style, driving behaviors, driving patterns, lifestyle patterns, vehicle data and generate and analyze driving behaviors.</br>
+                </div>
+            </div>
+            <img class="d-none d-lg-block img-fluid" style="width: 130px;" src="./img/logo.png">
+        </div>
+    </div>
+</section>
+
+<!-- Application Features -->
+<section id="applicationFeatures" style="height: 100%;" class="p-5 col-md-12 col-lg-12">
+    <div class= " container">
+        <h2 class="text-center py-2" style="color: #3c446c;">Application Features</h2>
+
+        <div class="row align-items-center justify-content-between text-center">
+            <div class="col-xs-12 col-lg-2 col-md-2">
+                <img src="./img/logo.png" style="width:100px;" class="card-img-top py-2" alt="...">
+                <div class="card-body">
+                  <p class="card-title">Tracking Driver Trips</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-lg-2 col-md-2">
+                <img src="./img/logo.png" style="width:100px;" class="card-img-top py-2" alt="...">
+                <div class="card-body">
+                  <p class="card-title">Reward Top Drivers</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-lg-2 col-md-2">
+                <img src="./img/logo.png" style="width:100px;" class="card-img-top py-2" alt="...">
+                <div class="card-body">
+                  <p class="card-title">Share Safety Stores</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-lg-2 col-md-2">
+                <img src="./img/logo.png" style="width:100px;" class="card-img-top py-2" alt="...">
+                <div class="card-body">
+                  <p class="card-title">Tracks Vehicle Registeration</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-lg-2 col-md-2">
+                <img src="./img/logo.png" style="width:100px;" class="card-img-top py-2" alt="...">
+                <div class="card-body">
+                  <p class="card-title">Tracks Vehicle Insureance</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-lg-2 col-md-2">
+                <img src="./img/logo.png" style="width:100px;" class="card-img-top py-2" alt="...">
+                <div class="card-body">
+                  <p class="card-title">Works on <br>IOS and Android</p>
+                </div>
+              </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Top Drivers -->
+<section id="topDrivers" style="height: 100%;" class="p-5 justify-content-center ">
+    <div class="container justify-content-center ">
+        <h3 class="text-center pb-3 text-warning">Top Drivers for February 2023</h3>
+<br><br>
+        <div class="row text-center justify-content-between">
+            <div class="card" style="width: 340px; height: 100%;">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <img id="proImage" src="./img/ama.jpg" class="p-2" style="width: 100px; margin-right: 20px;" alt="...">
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="card-body">
+                        <h6 class="">Abdulkareem M. Alansari</h6>
+                        <h6 class="">WR IND SEC OPS DEPT</h6>
+                        <h6 class="">NR SEC OPS DIV</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="card" style="width: 340px; height: 100%;">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <img id="proImage" src="./img/ama.jpg" class="p-2" style="width: 100px; margin-right: 20px;" alt="...">
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="card-body">
+                        <h6 class="">Abdulkareem M. Alansari</h6>
+                        <h6 class="">WR IND SEC OPS DEPT</h6>
+                        <h6 class="">NR SEC OPS DIV</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="card" style="width: 340px; height: 100%;">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <img id="proImage" src="./img/ama.jpg" class="p-2" style="width: 100px; margin-right: 20px;" alt="...">
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="card-body">
+                        <h6 class="">Abdulkareem M. Alansari</h6>
+                        <h6 class="">WR IND SEC OPS DEPT</h6>
+                        <h6 class="">NR SEC OPS DIV</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <br><br>
+</section>
+
+<!-- Top Departments -->
+<section id="topDepartments" style="height: 100%;" class="bg-light justify-content-center p-5">
+    <div class="container justify-content-center">
+        <h3 class="text-center pb-3" style="color: #3c446c;">Top Departments for February 2023</h3>
+        <br><br>
+        <div class="row text-center justify-content-center">
+            <div class="card" style="width: 340px; height: 90px;">
+                  <div class="col-lg-12">
+                    <div class="card-body">
+                      <h5 class="card-title">WR IND SEC OPS DEPT</h5>
+                      <h5 class="card-text">+600 Employees</h5>
+                    </div>
+                </div>
+              </div>
+
+                <div class="card" style="width: 340px; height: 90px;">
+                  <div class="col-lg-12">
+                    <div class="card-body">
+                      <h5 class="card-title">SA IND SEC OPS DEPT</h5>
+                      <h5 class="card-text">+540 Employees</h5>
+                    </div>
+                </div>
+              </div>
+
+              <div class="card" style="width: 340px; height: 90px;">
+                <div class="col-lg-12">
+                  <div class="card-body">
+                    <h5 class="card-title">DH IND SEC OPS DEPT</h5>
+                    <h5 class="card-text">+330 Employees</h5>
+                  </div>
+              </div>
+            </div>
+
+        </div>
+    </div>
+    <br><br>
+</section>
+
+<section id="monthlyStatisticsReport" style="height: 100%;" class="p-5 col-md-12">
+    <div class="container">
+        <h2 class="text-center p-3 text-warning align-items-center">Monthly Statistics Report</h2>
+
+        <div class="row text-center align-items-center justify-content-between">
+
+          <div class="col-xs-12 col-lg-2 col-md-2">
+            <div class="cir card-body">
+                  <p class="card-title">+20,000 Trips</p>
+                </div>
+              </div>
+              <br>
+              <div class="col-xs-12 col-lg-2 col-md-2">
+                <div class="cir card-body">
+                    <p class="card-title">+320 Driving Hours</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-lg-2 col-md-2">
+                <div class="cir card-body">
+                    <p class="card-title">+700 Speed violations</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-lg-2 col-md-2">
+                <div class="cir card-body">
+                    <p class="card-title">+500 Hard Breaks</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-lg-2 col-md-2">
+                <div class="cir card-body">
+                    <p class="card-title">1123 Active Drivers</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-lg-2 col-md-2">
+                <div class="cir card-body">
+                    <p class="card-title">23 New Drivers</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Monthly Quizes Competition -->
+<section id="monthlyQuizesCompetition" style="height: 100%;" class="py-5 text-dark">
+    <div class="container">
+       <div class="row align-items-center justify-content-center flex-row-reverse">
+          <div class="col-md">
+             <h3 class="text-dark">Monthly Driving Quizes</h3>
+             <br><br>
+
+             <p>February Quiz is now available.</p>
+
+             <p style="color: red" id="demo"></p>
+
+             <button id="btnStart" type="" class="btn btn-success">Start Quiz</button>
+            
+            <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Feb 28, 2023 12:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = "Expired in " + days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("btnStart").disabled = true;
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+            }, 1000);
+            </script>
+          </div>
+       </div>
+    </div>
+ </section>
+
+<!-- Contact Us -->
+ <section id="contactUs" style="height: 100%;" class="py-5 text-white">
+ <div class="container">
+  <h2 class="text-center text-warning">Contact Us</h2>
+
+  <form class="row g-4 py-3" method="POST" action="" enctype="multipart/form-data">
+    <div class="col-md-6">
+      <label for="Name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter Your Full Name" required >
+    </div>
+
+    <div class="col-md-6">
+      <label for="Email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="Email" name="Email" placeholder="Enter Your Email" required>
+    </div>
+
+ 
+    <div class="form-floating" id="remain">
+    <textarea class="form-control text-dark" name="Question" id="floatingTextarea2" style="height: 100px"></textarea>
+    <label for="floatingTextarea2" placeholder="Enter Your Message" >Question</label>
+    </div>
+
+
+
+    <div class="col-12 text-center">
+      <button type="submit" class="btn btn-warning px-5" name="Send">Send</button>
+    </div>
+
+  </form>
+  </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="height: 100%;" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-3">
+            Frequently Asked Questions
+            <br><br>
+
+        </h2>
+        <div class="accordion accordion-flush" id="bt-faq">
+
+            <div class="accordion-item">
+                <h5 class="accordion-header" id="question-one">
+                    <button class="accordion-button collapsed" type="button"
+                             data-bs-toggle="collapse" data-bs-target="#answer-one">
+                             Who has access to view the details of my trips?
+                    </button>
+                </h5>
+                <div class="accordion-collapse collapse p-4" style="color:green" data-bs-parent="#bt-faq" id="answer-one">
+                Nobody can see your trips detials.
+                </div>
+            </div>   
+
+            <div class="accordion-item">
+                <h5 class="accordion-header" id="question-two">
+                    <button class="accordion-button collapsed" type="button"
+                             data-bs-toggle="collapse" data-bs-target="#answer-two">
+                             Does the Be Safe application work on both Android and iOS devices?
+                    </button>
+                </h5>
+                <div class="accordion-collapse collapse p-4" style="color:green" data-bs-parent="#bt-faq" id="answer-two">
+                Yes, you can download this application on your Android, iOS and vehicle android systems.
+                </div>
+            </div>   
+
+            <div class="accordion-item">
+                <h5 class="accordion-header" id="question-four">
+                    <button class="accordion-button collapsed" type="button"
+                             data-bs-toggle="collapse" data-bs-target="#answer-four">
+                             Are there rewards to top drivers?
+                    </button>
+                </h5>
+                <div class="accordion-collapse collapse p-4" style="color:green" data-bs-parent="#bt-faq" id="answer-four">
+                Yes, we have a monthly rewards and recognition for top drivers.
+                </div>
+            </div>  
+
+        </div>
+  </div>      
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="pt-2 text-white text-center mt-auto" style="height: 50px;">
+  <div class="container">
+    <p class="lead">
+         Copyright &copy; <span class="text-warning">WRISOD 2023</span>
+     </p>
+  </div>
+</footer>
+  
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>

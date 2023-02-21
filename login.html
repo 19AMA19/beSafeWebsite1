@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style> body::before{ content: ''; display: block; height: 60px } </style>
+
+    <title>Login</title>
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+    
+    <section >
+        <div id="navbar" class="navbar navbar-expand-md navbar-dark text-white fixed-top" style="height: 55px;">
+            <div class="container">
+            
+             <nav class="navbar">
+                <div class="container-fluid align-items-center">
+                  <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" alt="Logo" height="35" class="d-inline-block align-text-center mx-2">
+                    Be Safe
+                  </a>
+               </div>
+              </nav>
+    
+                <div id="mainmenu" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <a class="btn btn-warning mx-3" href="index.html" >Home</a>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+     </section>
+
+<!--Login -->
+
+<section id="support" class="py-5 bg-light text-white text-center d-flex justify-content-center">    
+   
+    <div class="bg-dark p-4 col-lg-6 row" style="border: 2px solid #ffc107;">
+            
+                <img src="./img/logo.png" alt="Logo" style="width: 150px;" class="justify-content-around" >
+                <h3 class="text-warning text-center my-3 "> Login</h3>
+
+                <form  onsubmit="login(event)">
+                    <div class="col-lg-12">
+                        <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+                    </div>
+                    <br><br>
+                    <div class="col-lg-12">
+                        <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
+                    </div>
+                    <br><br>
+                    <div class="col-lg-12">
+                        <button class="btn btn-warning" name="loginBtn">Login</button>
+                    </div>
+                </form>
+                <br>
+                <br>
+                <!-- <p class="text-center">
+                    <a href="patient_forget_password.php" class="text-warning">Forget Password</a>
+                </p> -->
+            
+        </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="pt-2 text-white text-center mt-auto" style="height: 50px;">
+    <div class="container">
+      <p class="lead">
+           Copyright &copy; <span class="text-warning">WRISOD 2023</span>
+       </p>
+    </div>
+</footer>
+    
+    <script src="./js/app.js" type="module"> </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
