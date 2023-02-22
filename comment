@@ -1,0 +1,56 @@
+// const q = query(collection(db, 'userData') , where());
+
+// getDocs(q).then(snapshot => {
+//   let users = [];
+//   snapshot.forEach((doc) => {
+//     users.push({...doc.data(), id:doc.id});
+//   });
+//     console.log(users);
+//   });
+  
+
+
+// // getDoc(doc(db, 'userData', '0t00JTc83FP45DwieEBsncvIlTD3')).then(snapshot => {
+
+// //   if(snapshot.exists){
+// //     console.log(snapshot.data()['fullname']);
+
+// //   } else {
+// //     console.log("nothing");
+
+// //   }
+
+// // });
+
+// getDocs(collection(db, "userData")).then(snapshot => {
+//     let users = [];
+//     snapshot.forEach((doc) => {
+//       users.push({...doc.data(), id:doc.id});
+//     });
+//       console.log(users);
+//     });
+    
+
+
+
+//     <div id="navbar" class="navbar navbar-expand-md navbar-dark text-white fixed-top" style="height: 55px;">
+//     <div class="container">
+
+//         <nav class="navbar">
+//         <div class="container-fluid align-items-center">
+//             <a class="navbar-brand" href="#">
+//             <img src="./img/logo.png" alt="Logo" height="35" class="d-inline-block align-text-center mx-2">
+//             Be Safe
+//             </a>
+//         </div>
+//         </nav>
+
+//         <div id="mainmenu" class="collapse navbar-collapse">
+//             <ul class="navbar-nav ms-auto">
+//                 <a onclick="logout(event)" class="btn btn-warning mx-3">Logout</a>
+//             </ul>
+//         </div>
+        
+//     </div>
+    
+// </div>
