@@ -18,45 +18,37 @@
  const auth = getAuth();
  const db = getFirestore(app);
 
-
-// Get users data from firestore
-const userList = document.querySelector('.ta');
-
-
-getDocs(collection(db, "userData")).then(snapshot => {
-  var index = 0;
-  let html = '';
-
-  snapshot.forEach((doc) => {
-    const getUsers = doc.data();
-    const li = `
-    <tr>
-        <td>${index+=1}</td>
-        <td>${getUsers.fullname}</td>
-        <td>${getUsers.email}</td>
-        <td>${getUsers.department}</td>
-        <td>${getUsers.division}</td>
-        <td>${getUsers.role}</td>
-    <tr>
-      `;
-    html += li;
-  });
-  userList.innerHTML = html;
-
-});
-  
-
-
-
+ const hideTable = document.querySelector('.table');
+ const showUsers = document.querySelector('.ta');
+ const showMessage = document.querySelector('#message');
 
 
 // Check if user login
 auth.onAuthStateChanged(user => {
   if (user) {
-    console.log('User logged in ' , user);
+    // Get users data from firestore
+    let html = '';
+    var index = 0;
+    getDocs(collection(db, "userData")).then(snapshot => {
+      snapshot.forEach((doc) => {
+        const getUsers = doc.data();
+        const li = `
+        <tr>
+            <td>${index+=1}</td>
+            <td>${getUsers.fullname}</td>
+            <td>${getUsers.email}</td>
+            <td>${getUsers.department}</td>
+            <td>${getUsers.division}</td>
+            <td>${getUsers.role}</td>
+        <tr>
+          `;
+        html += li;
+      });
+      showUsers.innerHTML = html;
+    });
   } else {
-    console.log('User logged out ' , user);
-
+    showMessage.innerHTML = `<h5 class="text-center justify-content-center"> Login to view data</h5>`;
+    hideTable.style.display = "none";
   }
 });
 
@@ -73,7 +65,7 @@ e.preventDefault();
     password:password.value,            
     }
     signInWithEmailAndPassword(auth, user.email, user.password).then(function(success){
-        window.location.replace('dashboard.html');
+        window.location.replace('./admin/index.html');
         alert("Login successfully");
     })
     .catch(function(error){
@@ -86,7 +78,7 @@ e.preventDefault();
 window.logout = function(e){
     e.preventDefault();
     signOut(auth).then(() => {
-        alert("Logout successfully");
+        alert("Logout successfully ...");
         console.log("Logout");
 
         window.location.replace('index.html');
@@ -96,25 +88,19 @@ window.logout = function(e){
 }
 
 
-// ===================
-// add hovered class to selected list item
-let list = document.querySelectorAll(".navigation li");
 
-function activeLink() {
-  list.forEach((item) => {
-    item.classList.remove("hovered");
-  });
-  this.classList.add("hovered");
+
+// Display links based on user auth
+const loggedInLinks = document.querySelectorAll('.logged-in');
+const loggedOutLinks = document.querySelector('.logged-out');
+
+const setupLinks = (user) => {
+ if(user){
+   loggedInLinks.forEach(item => item.style.display = 'block');
+   loggedOutLinks.forEach(item => item.style.display = 'none');
+ } else {
+   loggedInLinks.forEach(item => item.style.display = 'none');
+   loggedOutLinks.forEach(item => item.style.display = 'block');
+ }
 }
-
-list.forEach((item) => item.addEventListener("mouseover", activeLink));
-
-// Menu Toggle
-let toggle = document.querySelector(".toggle");
-let navigation = document.querySelector(".navigation");
-let main = document.querySelector(".main");
-
-toggle.onclick = function () {
-  navigation.classList.toggle("active");
-  main.classList.toggle("active");
-};
+// =================================================================== End
