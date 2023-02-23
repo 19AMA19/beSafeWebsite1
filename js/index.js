@@ -81,7 +81,7 @@ window.logout = function(e){
         alert("Logout successfully ...");
         console.log("Logout");
 
-        window.location.replace('index.html');
+        window.location.replace('../index.html');
       }).catch((error) => {
         alert("Error: " + error);
       });
