@@ -18,13 +18,13 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
 
-<section class="col-xs-12 col-md-12">
+<section class="col-md-12">
     <div id="navbar" class="navbar navbar-expand-md navbar-dark text-white fixed-top" style="height: 55px;">
         <div class="container">
             <nav class="navbar">
             <div class="container-fluid align-items-center">
                 <a class="navbar-brand" href="#">
-                <img href="../index.html" src="../img/logo.png" alt="Logo" height="35" class="d-inline-block align-text-center mx-2">
+                <img src="../img/logo.png" alt="Logo" height="35" class="d-inline-block align-text-center mx-2">
                 Be Safe
                 </a>
              </div>
@@ -33,128 +33,339 @@
             <div id="mainmenu" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li>
-                        <a href="../admin/index.html"  class="btn text-light">Home</a>
+                        <a href="../admin/index.html" class="btn text-light">Dashboard</a>
                     </li>
                     <li>
-                        <a href="../admin/dashboard.html" class="btn text-light">Dashboard</a>
+                        <a href="../admin/drivers.html" class="btn text-light">Drivers</a>
                     </li>
                     <li>
-                        <a class="btn text-light">Profile</a>
-                    </li>
-                    <li>
-                        <a class="btn text-light">Settings</a>
+                        <a href="../admin/myprofile.html" class="btn text-light">My Profile</a>
                     </li>
                     <li>
                         <a onclick="logout(event)" class="btn btn-warning mx-3">Logout</a>
                     </li>
                 </ul>
             </div>
-            
         </div>
-        
     </div>
 </section>
 
 
+<section id="bg" class="d-flex container mt-3" style="width: 100%;">
+    <div id="emp" class="row d-flex col-md-12 bg-dark text-center align-items-center justify-content-center p-4"> 
+        <div class="text-light">
+            <h2>ISO Weekly Driving Report</h2>
+            <h4 class="text-warning">Week # 8 | 26 February 2023 </h4>
+            <br>
+        </div>
+        <hr style="color: aliceblue;">
+        <h3 class="text-light text-center">Drivers Per Departments</h3>
+        <br>
+        <div class="text-center col-md-4 col-lg-2">
+            <img class="p-3" src="../img/logo.png" style="width: 120px;">
+            <h6 class="text-light">ISO</h6>
+            <p class="text-light"> 1000 </p>
+        </div>
+        <div class="text-center col-md-4 col-lg-2">
+            <img class="p-3" src="../img/logo.png" style="width: 120px;">
+            <h6 class="text-light">WRISOD</h6>
+            <p class="text-light"> 20 </p>
+        </div>
+        <div class="text-center col-md-4 col-lg-2">
+            <img class="p-3" src="../img/logo.png" style="width: 120px;">
+            <h6 class="text-light">SAISOD</h6>
+            <p class="text-light"> 322 </p>
+        </div>
+        <div class="text-center col-md-4 col-lg-2">
+            <img class="p-3" src="../img/logo.png" style="width: 120px;">
+            <h6 class="text-light">NAISOD</h6>
+            <p class="text-light"> 140 </p>
+        </div>
+        <div class="text-center col-md-4 col-lg-2">
+            <img class="p-3" src="../img/logo.png" style="width: 120px;">
+            <h6 class="text-light">DHISOD</h6>
+            <p class="text-light"> 524 </p>
+        </div>
+        <div class="text-center col-md-4 col-lg-2">
+            <img class="p-3" src="../img/logo.png" style="width: 120px;">
+            <h6 class="text-light">ISSD</h6>
+            <p class="text-light"> 5 </p>
+        </div>
+    <hr style="color: aliceblue;">
 
+    <h3 class="text-light text-center">Participation Rate</h3>
+    <br><br><br><br>
 
-
-<section>
-    <table class="container table table-striped-columns text-center">
-        <thead id="table">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Department</th>
-            <th scope="col">Division</th>
-            <th scope="col">Role</th>
-          </tr>
-        </thead>
-        <tbody class="ta">
-        </tbody>
-      </table>
-      <h1 id="message"></h1>
-</section>
-
-<section class="container col-lg-7 mt-3" style="width: 100%;">
-<div id="emp" class=" d-flex bg-dark text-center align-items-center justify-content-center p-4"style="width: 100%;"> 
-    <div class="text-center">
-        <img class="p-3" src="../img/logo.png" style="width: 120px;">
-        <h6 class="text-light">Total Drivers</h6>
-        <p class="text-light"> 1000 </p>
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirRed"> 23% </p>
+        </div>
+        <h6 class="text-light">ISO</h6>
     </div>
-    <div class="text-center">
-        <img class="p-3" src="../img/logo.png" style="width: 120px;">
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirYellow"> 53% </p>
+        </div>
         <h6 class="text-light">WRISOD</h6>
-        <p class="text-light"> 20 </p>
     </div>
-    <div class="text-center">
-        <img class="p-3" src="../img/logo.png" style="width: 120px;">
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirRed"> 30% </p>
+        </div>
         <h6 class="text-light">SAISOD</h6>
-        <p class="text-light"> 322 </p>
     </div>
-    <div class="text-center">
-        <img class="p-3" src="../img/logo.png" style="width: 120px;">
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirRed"> 22% </p>
+        </div>
         <h6 class="text-light">NAISOD</h6>
-        <p class="text-light"> 140 </p>
     </div>
-    <div class="text-center">
-        <img class="p-3" src="../img/logo.png" style="width: 120px;">
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirYellow"> 41% </p>
+        </div>
         <h6 class="text-light">DHISOD</h6>
-        <p class="text-light"> 524 </p>
     </div>
-    <div class="text-center">
-        <img class="p-3" src="../img/logo.png" style="width: 120px;">
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirYellow"> 55% </p>
+        </div>
         <h6 class="text-light">ISSD</h6>
-        <p class="text-light"> 5 </p>
+    </div>
+
+    <hr style="color: aliceblue;">
+    <br>
+    <h3 class="text-light text-center">Total Trips</h3>
+    <br><br><br><br>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirNor"> 4432 </p>
+        </div>
+        <h6 class="text-light">ISO</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirNor"> 633 </p>
+        </div>
+        <h6 class="text-light">WRISOD</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirNor"> 432 </p>
+        </div>
+        <h6 class="text-light">SAISOD</h6>
+    </div>
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirNor"> 245 </p>
+        </div>
+        <h6 class="text-light">NAISOD</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirNor"> 542 </p>
+        </div>
+        <h6 class="text-light">DHISOD</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirNor"> 323 </p>
+        </div>
+        <h6 class="text-light">ISSD</h6>
+    </div>
+    <hr style="color: aliceblue;">
+
+    <h3 class="text-light text-center">Driving Hours</h3>
+    <br><br><br><br>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirNor"> 2311 </p>
+        </div>
+        <h6 class="text-light">ISO</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirNor"> 542 </p>
+        </div>
+        <h6 class="text-light">WRISOD</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirNor"> 322 </p>
+        </div>
+        <h6 class="text-light">SAISOD</h6>
+    </div>
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirNor"> 173 </p>
+        </div>
+        <h6 class="text-light">NAISOD</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirNor"> 293 </p>
+        </div>
+        <h6 class="text-light">DHISOD</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirNor"> 293 </p>
+        </div>
+        <h6 class="text-light">ISSD</h6>
+    </div>
+    <hr style="color: aliceblue;">
+    <br>
+    <h3 class="text-light text-center">Speed Violations</h3>
+    <br><br><br><br>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirRed"> 112 </p>
+        </div>
+        <h6 class="text-light">ISO</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirYellow"> 27 </p>
+        </div>
+        <h6 class="text-light">WRISOD</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirRed"> 43 </p>
+        </div>
+        <h6 class="text-light">SAISOD</h6>
+    </div>
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirYellow"> 33 </p>
+        </div>
+        <h6 class="text-light">NAISOD</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirYellow"> 21 </p>
+        </div>
+        <h6 class="text-light">DHISOD</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirGreen"> 5 </p>
+        </div>
+        <h6 class="text-light">ISSD</h6>
+    </div>
+    <hr style="color: aliceblue;">
+    <br>
+    <h3 class="text-light text-center">Hard Breaks</h3>
+    <br><br><br><br>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirRed"> 490 </p>
+        </div>
+        <h6 class="text-light">ISO</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirYellow"> 133 </p>
+        </div>
+        <h6 class="text-light">WRISOD</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirYellow"> 145 </p>
+        </div>
+        <h6 class="text-light">SAISOD</h6>
+    </div>
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirRed"> 211 </p>
+        </div>
+        <h6 class="text-light">NAISOD</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirRed"> 234 </p>
+        </div>
+        <h6 class="text-light">DHISOD</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirRed"> 256 </p>
+        </div>
+        <h6 class="text-light">ISSD</h6>
+    </div>
+
+    <hr style="color: aliceblue;">
+    <br>
+    <h3 class="text-light text-center">Overall Driving Performance</h3>
+    <br><br><br><br>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirYellow"> 55% </p>
+        </div>
+        <h6 class="text-light">ISO</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirGreen"> 89% </p>
+        </div>
+        <h6 class="text-light">WRISOD</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirRed"> 31% </p>
+        </div>
+        <h6 class="text-light">SAISOD</h6>
+    </div>
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirRed"> 22% </p>
+        </div>
+        <h6 class="text-light">NAISOD</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirYellow"> 60% </p>
+        </div>
+        <h6 class="text-light">DHISOD</h6>
+    </div>
+
+    <div class="text-center col-md-4 col-lg-2">
+        <div>
+            <p class="text-light cirYellow"> 44% </p>
+        </div>
+        <h6 class="text-light">ISSD</h6>
     </div>
 </div>
 </section>
-
-<section id="emp"  class="container bg-dark col-lg-10 col-md-10 col-xs-10 mt-3  d-flex justify-content-center align-items-center  p-4">
-   
-   <div class="col-lg-12 col-md-12 col-xs-12">
-    <h6 class="text-light text-center">Participation Rate</h6>
-    
-    <div class="d-flex col-lg-12">
-        <span class="text-light text-center justify-content-between align-items-center col-lg-3">WRISOD</span>
-        <div class="progress col-lg-7">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Example with label" style="width: 89%;" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">89%</div>
-        </div>
-    </div>
-    <br>
-    <div class="d-flex col-lg-12">
-        <span class="text-light text-center justify-content-between col-lg-3">SAISOD</span>
-        <div class="progress col-lg-7">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Example with label" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-        </div>
-    </div>
-    <br>
-    <div class="d-flex col-lg-12">
-        <span class="text-light text-center justify-content-between align-items-center col-lg-3">NAISOD</span>
-        <div class="progress col-lg-7">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Example with label" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
-        </div>
-    </div>
-    <br>
-    <div class="d-flex col-lg-12">
-        <span class="text-light text-center justify-content-between col-lg-3">DHISOD</span>
-        <div class="progress col-lg-7">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Example with label" style="width: 44%;" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100">44%</div>
-        </div>
-    </div>
-    <br>
-    <div class="d-flex col-lg-12">
-        <span class="text-light text-center justify-content-between col-lg-3">ISSD</span>
-        <div class="progress col-lg-7">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Example with label" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-        </div>
-    </div>
-
-   </div>
-</section>
-
+<br><br><br>
 
 <!-- Footer -->
 <footer id="footer" class="pt-2 text-white text-center mt-auto" style="height: 50px;">

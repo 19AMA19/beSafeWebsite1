@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style> body::before{ content: ''; display: block; height: 60px } </style>
+
+    <title>Be Safe</title>
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<section class="col-xs-12 col-md-12">
+    <div id="navbar" class="navbar navbar-expand-md navbar-dark text-white fixed-top" style="height: 55px;">
+        <div class="container">
+            <nav class="navbar">
+            <div class="container-fluid align-items-center">
+                <a class="navbar-brand" href="#">
+                <img href="../index.html" src="../img/logo.png" alt="Logo" height="35" class="d-inline-block align-text-center mx-2">
+                Be Safe
+                </a>
+             </div>
+            </nav>
+
+            <div id="mainmenu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li>
+                        <a href="../admin/index.html" class="btn text-light">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="../admin/drivers.html" class="btn text-light">Drivers</a>
+                    </li>
+                    <li>
+                        <a href="../admin/myprofile.html" class="btn text-light">My Profile</a>
+                    </li>
+                    <li>
+                        <a onclick="logout(event)" class="btn btn-warning mx-3">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<section id="support" class="py-4 bg-light text-white text-center d-flex justify-content-center">    
+    <div class="bg-dark p-4 col-lg-5" style="border: 2px solid #ffc107;">
+    <!-- <img src="./img/logo.png" alt="Logo" style="width: 100px;"  > -->
+    <h1 class="text-warning text-center my-3 "> Log in to Be Safe</h1>
+    <h1>My name</h1>
+    <h1>My age</h1>
+    <h1>My role</h1>
+
+
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer id="footer" class="pt-2 text-white text-center mt-auto" style="height: 50px;">
+    <div class="container">
+      <p class="lead">
+           Copyright &copy; <span class="text-warning">WRISOD 2023</span>
+       </p>
+    </div>
+</footer>
+
+<script src="../js/index.js" type="module"> </script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

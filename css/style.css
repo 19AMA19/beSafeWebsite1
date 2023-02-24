@@ -2,6 +2,10 @@
     font-family: 'Sunflower', sans-serif;
 }
 
+body{
+    background-color: #F5EDCE;
+}
+
 #navbar {
     background-color: #232d4e;
     background-image: url(/img/bgl.png);
@@ -87,15 +91,16 @@
 /* ------------------------ Dashboard Design ------------------------ */
 
 #emp{
-    /* border-bottom-left-radius: 50px; */
-    /* border-top-left-radius: 50px; */
-    /* border-top-right-radius: 50px; */
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
-.cirs{
+/* -------------------- KPI ----------------- */
+.cirGreen{
     color: #232d4e;
     font-size: 25pt;
-    background: #ffb703;
+    background: #2B7A0B;
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -105,5 +110,49 @@
     justify-content: center;
     border: 5px solid white;
     display: inline-flex;
+}
 
+.cirYellow{
+    color: #232d4e;
+    font-size: 25pt;
+    background: #FF8E00;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 5px solid white;
+    display: inline-flex;
+}
+
+.cirRed{
+    color: #232d4e;
+    font-size: 25pt;
+    background: #FF1700;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 5px solid white;
+    display: inline-flex;
+}
+
+.cirNor{
+    color: #232d4e;
+    font-size: 25pt;
+    background: #3e0387;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 5px solid white;
+    display: inline-flex;
 }

@@ -40,12 +40,16 @@ auth.onAuthStateChanged(user => {
             <td>${getUsers.department}</td>
             <td>${getUsers.division}</td>
             <td>${getUsers.role}</td>
+            <td>Active</td>
         <tr>
           `;
-        html += li;
+        html += li
+        showUsers.innerHTML = html
       });
-      showUsers.innerHTML = html;
     });
+
+
+
   } else {
     showMessage.innerHTML = `<h5 class="text-center justify-content-center"> Login to view data</h5>`;
     hideTable.style.display = "none";
@@ -66,7 +70,7 @@ e.preventDefault();
     }
     signInWithEmailAndPassword(auth, user.email, user.password).then(function(success){
         window.location.replace('./admin/index.html');
-        alert("Login successfully");
+        // alert("Login successfully");
     })
     .catch(function(error){
         alert("Error "+ error)
@@ -84,23 +88,8 @@ window.logout = function(e){
         window.location.replace('../index.html');
       }).catch((error) => {
         alert("Error: " + error);
-      });
+    });
 }
 
 
 
-
-// Display links based on user auth
-const loggedInLinks = document.querySelectorAll('.logged-in');
-const loggedOutLinks = document.querySelector('.logged-out');
-
-const setupLinks = (user) => {
- if(user){
-   loggedInLinks.forEach(item => item.style.display = 'block');
-   loggedOutLinks.forEach(item => item.style.display = 'none');
- } else {
-   loggedInLinks.forEach(item => item.style.display = 'none');
-   loggedOutLinks.forEach(item => item.style.display = 'block');
- }
-}
-// =================================================================== End

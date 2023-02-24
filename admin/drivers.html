@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style> body::before{ content: ''; display: block; height: 60px } </style>
+
+    <title>Drivers</title>
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<section class="col-xs-12 col-md-12">
+    <div id="navbar" class="navbar navbar-expand-md navbar-dark text-white fixed-top" style="height: 55px;">
+        <div class="container">
+            <nav class="navbar">
+            <div class="container-fluid align-items-center">
+                <a class="navbar-brand" href="#">
+                <img href="../index.html" src="../img/logo.png" alt="Logo" height="35" class="d-inline-block align-text-center mx-2">
+                Be Safe
+                </a>
+             </div>
+            </nav>
+
+            <div id="mainmenu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li>
+                        <a href="../admin/index.html" class="btn text-light">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="../admin/drivers.html" class="btn text-light">Drivers</a>
+                    </li>
+                    <li>
+                        <a href="../admin/myprofile.html" class="btn text-light">My Profile</a>
+                    </li>
+                    <li>
+                        <a onclick="logout(event)" class="btn btn-warning mx-3">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+<section class="col-lg-12">
+    <h3 class="text-center m-4">All Employees</h3>
+    <table class="container table-bordered text-center text-dark">
+        <thead class="bg-dark table-dark">
+            <tr>
+            <th class="col">#</th>
+            <th class="col">Name</th>
+            <th class="col">Email</th>
+            <th class="col">Department</th>
+            <th class="col">Division</th>
+            <th class="col">Role</th>
+            <th class="col">Status</th>
+            </tr>
+        </thead>
+        <tbody class="ta"></tbody>
+    </table>
+    <h1 id="message"></h1>
+</section>
+
+
+
+
+
+
+<!-- Footer -->
+<footer id="footer" class="pt-2 text-white text-center mt-auto" style="height: 50px;">
+    <div class="container">
+      <p class="lead">
+           Copyright &copy; <span class="text-warning">WRISOD 2023</span>
+       </p>
+    </div>
+</footer>
+
+<script src="../js/index.js" type="module"> </script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
