@@ -18,10 +18,11 @@
  const auth = getAuth();
  const db = getFirestore(app);
 
+ var email = document.querySelector("#email")
+ var password = document.querySelector("#password")
  const hideTable = document.querySelector('.table');
  const showUsers = document.querySelector('.ta');
  const showMessage = document.querySelector('#message');
-
 
 // Check if user login
 auth.onAuthStateChanged(user => {
@@ -48,19 +49,13 @@ auth.onAuthStateChanged(user => {
       });
     });
 
-
-
   } else {
     showMessage.innerHTML = `<h5 class="text-center justify-content-center"> Login to view data</h5>`;
     hideTable.style.display = "none";
   }
 });
 
-
-
 //  Login Function
- var email = document.getElementById("email")
- var password = document.getElementById("password")
 
  window.login = function(e){
 e.preventDefault();
