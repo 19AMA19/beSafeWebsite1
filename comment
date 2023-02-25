@@ -1,4 +1,4 @@
-// const q = query(collection(db, 'userData') , where());
+<!-- // const q = query(collection(db, 'userData') , where());
 
 // getDocs(q).then(snapshot => {
 //   let users = [];
@@ -176,3 +176,37 @@
 
    </div>
 </section> */}
+
+
+
+Contact Us -->
+<!-- <section id="contactUs" style="height: 100%;" class="py-5 text-white">
+    <div class="container">
+     <h2 class="text-center text-warning">Contact Us</h2>
+   
+     <form class="row g-4 py-3">
+       <div class="col-md-6">
+         <label for="Name" class="form-label">Name</label>
+         <input type="text" class="form-control" id="CName" placeholder="Enter Your Name" required >
+       </div>
+   
+       <div class="col-md-6">
+         <label for="Email" class="form-label">Email</label>
+         <input type="email" class="form-control" id="CEmail" placeholder="Enter Your Email" required>
+       </div>
+   
+    
+       <div class="form-floating" id="remain">
+       <textarea class="form-control text-dark" id="CMessage" style="height: 100px"></textarea>
+       <label for="floatingTextarea2" placeholder="Enter Your Message" >Question</label>
+       </div>
+   
+   
+       <div class="col-12 text-center">
+         <button class="btn btn-warning px-5" id="btnSend">Send</button>
+       </div>
+   
+     </form>
+     </div>
+     </div>
+   </section> -->

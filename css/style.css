@@ -156,3 +156,14 @@ body{
     border: 5px solid white;
     display: inline-flex;
 }
+
+#MyProPic{
+    border: 2px solid #ffc107;
+    width: 160px;
+    height: 160px;
+    /* border-radius: 50%; */
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+

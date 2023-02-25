@@ -39,6 +39,9 @@
                         <a href="../admin/drivers.html" class="btn text-light">Drivers</a>
                     </li>
                     <li>
+                        <a href="../admin/messages.html" class="btn text-light">Messages</a>
+                    </li>
+                    <li>
                         <a href="../admin/myprofile.html" class="btn text-light">My Profile</a>
                     </li>
                     <li>
@@ -375,6 +378,12 @@
        </p>
     </div>
 </footer>
+
+
+<script>
+    var currentUser = null;
+    currentUser = JSON.parse(sessionStorage.getItem('user'));
+</script>
 
 <script src="../js/index.js" type="module"> </script>
 <script src="../js/bootstrap.bundle.min.js"></script>
